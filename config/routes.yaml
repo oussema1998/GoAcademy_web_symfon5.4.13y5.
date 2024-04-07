@@ -1,3 +1,17 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+  path: /
+  controller: App\Controller\LogController::login
+
+api_user_list:
+  path: /apilist
+  methods: GET
+  controller: App\Controller\ApiUserController::listUsers
+
+api_user_add:
+  path: /apiadd
+  methods:
+  controller: App\Controller\ApiUserController::adduser
+
+api_user_delete:
+  path: /deleteapi
+  controller: App\Controller\ApiUserController::deleteUser
